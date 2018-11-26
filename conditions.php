@@ -128,5 +128,16 @@ function richter($magnitude) {
     ?>
 </section>
 
+<section>
+    <h2>Exercice 6</h2>
+    <?php
+    if ($monAge >= 18) {
+        echo "<p>Tu es majeur</p>";
+    } else {
+        echo "<p>Tu n'es pas majeur</p>";
+    }
+    ?>
+</section>
+
 </body>
 </html>
