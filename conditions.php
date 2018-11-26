@@ -139,5 +139,27 @@ function richter($magnitude) {
     ?>
 </section>
 
+<section>
+    <h2>Exercice 7</h2>
+    <?php
+    if ($maVariable == false) {
+        echo "<p>C'est pas bon !!!</p>";
+    } else {
+        echo "<p>C'est ok !!</p>";
+    }
+    ?>
+</section>
+
+<section>
+    <h2>Exercice 8</h2>
+    <?php
+    if ($maVariable) {
+        echo "<p>C'est ok !!</p>";
+    } else {
+        echo "<p>C'est pas bon !!!</p>";
+    }
+    ?>
+</section>
+
 </body>
 </html>
