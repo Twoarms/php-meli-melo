@@ -29,6 +29,29 @@ function compare($n1, $n2) {
 function concatNumString($num, $str) {
     echo $num.$str;
 }
+
+// Exercice 6
+function salute($nom, $prenom, $age) {
+    echo "Bonjour ".$nom." ".$prenom.", tu as ".$age." ans";
+}
+
+// Exercice 7
+function statutLegal($age, $genre) {
+    if ($age >= 18 && $genre == "Homme") {
+        echo "Vous êtes un homme et vous êtes majeur"; 
+    } elseif ($age < 18 && $genre == "Homme") {
+        echo "Vous êtes un homme et vous êtes mineur";
+    } elseif ($age >= 18 && $genre == "Femme") {
+        echo "Vous êtes une femme et vous êtes majeure";
+    } else {
+        echo "Vous êtes une femme et vous êtes mineure";
+    }
+}
+
+// Exercice 8
+function somme($n1 = 8, $n2 = 4, $n3 = 12) {
+    echo ($n1 + $n2 + $n3)."<br/>";
+}
 ?>
 
 <!DOCTYPE html>
@@ -79,6 +102,28 @@ function concatNumString($num, $str) {
     <h2>Exercice 5</h2>
     <?php
     concatNumString(43110, "world");
+    ?>
+</section>
+
+<section>
+    <h2>Exercice 6</h2>
+    <?php
+    echo salute("Debras", "Mathieu", 24);
+    ?>
+</section>
+
+<section>
+    <h2>Exercice 7</h2>
+    <?php
+    statutLegal(17, "Femme");
+    ?>
+</section>
+
+<section>
+    <h2>Exercice 8</h2>
+    <?php
+    somme();
+    somme(2, 6, 12);
     ?>
 </section>
 
